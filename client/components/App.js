@@ -1,18 +1,16 @@
-import React from "react";
-import NavigationBar from "./NavigationBar";
-import FlashMessagesList from './flash/FlashMessagesList';
-// import '../styles/style.css';
+import React from 'react';
+import NavigationBar from './NavigationBar';
 
 class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <NavigationBar />
-        <FlashMessagesList />
-        {this.props.children}
-      </div>
-    );
-  }
+    render(){
+        return (
+            <div className="container">
+                <NavigationBar />
+                {this.props.children}
+            </div>
+        );
+    }
+    
 }
 
 export default App;
